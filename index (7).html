@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style (7).css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="=clock">15:30:50</div>
+<script >
+        window.onload=(function(){
+            window.serinterval(function(){
+                var date = new Date();
+
+                var hours=date.getHours();
+                var minutes=date.getUTCMinutes();
+                var seconds=date.getSeconds();
+
+                if (hours < 10) hours="0"+ hours;
+                if (minutes <10) minutes="0"+minutes;
+                if (secodns <10) seconds="0"+seconds;
+                var clock= hours+":"+ minutes + ":"+ seconds;
+                document.getElementByld("clock").innerHTML=clock
+            },1000 );
+        };
+        )
+    </script>
+</body>
+</html>
